@@ -17,10 +17,6 @@ jobs:
       run: scripts/setup-release-env.sh
         # Coloca aquí los comandos necesarios para configurar el entorno
 
-    - name: Build
-      run: |
-        # Coloca aquí los comandos para compilar/build del proyecto
-
     - name: Run Tests
       run: scripts/run-release-tests.sh
         # Coloca aquí los comandos para ejecutar las pruebas
