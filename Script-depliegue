@@ -1,0 +1,4 @@
+# Script de generación del despliegue (por ejemplo, deploy.ps1)
+
+# Desplegar la aplicación
+echo 'Desplegando la aplicación en el servidor...'
