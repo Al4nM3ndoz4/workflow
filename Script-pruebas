@@ -1,0 +1,5 @@
+# Script de pruebas en el entorno de liberación (por ejemplo, test.ps1)
+
+
+# Ejecutar pruebas
+dotnet test --configuration Release
