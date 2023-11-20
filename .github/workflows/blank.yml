@@ -1,0 +1,31 @@
+name: Pipeline
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Setup Environment
+      run: scripts/setup-release-env.sh
+        # Coloca aquí los comandos necesarios para configurar el entorno
+
+    - name: Build
+      run: |
+        # Coloca aquí los comandos para compilar/build del proyecto
+
+    - name: Run Tests
+      run: scripts/run-release-tests.sh
+        # Coloca aquí los comandos para ejecutar las pruebas
+
+    - name: Deploy
+      if: success()
+      run: scripts/deploy.sh
+        # Coloca aquí los comandos para el despliegue
