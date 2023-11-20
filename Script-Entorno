@@ -1,0 +1,5 @@
+# Script de generación del entorno de liberación (por ejemplo, build.ps1)
+
+
+# Compilar la aplicación
+dotnet build --configuration Release
